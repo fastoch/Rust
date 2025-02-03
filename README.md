@@ -42,6 +42,12 @@ src: https://www.youtube.com/watch?v=BpPEoZW5IiY
 ## Writing our first Rust program
 
 - see `firstProgram.rs` file
+- every Rust program starts with a `main` function
+```rust	
+fn main() {
+  println!("Hello, world!");
+}
+```
 
 
 ---
