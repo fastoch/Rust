@@ -43,6 +43,33 @@ src: https://www.youtube.com/watch?v=BpPEoZW5IiY
 In Rust, variables are **immutable** by default.  
 You need to explicitly declare a variable as mutable using the `mut` keyword.  
 
+You can't reassign a value to a variable that is not mutable.  
+You can't increment a variable that is not mutable.  
+
+We can allow unused variables by using the `_` character to prepend the variable name:
+```rust
+fn main() {
+  let _x = 5;
+}
+```
+
+We can also use this to make the compiler ignore unused variables:
+```rust
+#[allow(unused_variables)]
+fn main() {
+  let x = 5;
+}
+```
+
+## Destructuring
+
+We can use a pattern with `let` to destructure a tuple to separate variables:
+```rust
+let (a, b) = (1, 2);
+```
+
+## Destructuring Assignments
+
 
 
 ---
@@ -55,10 +82,7 @@ You need to explicitly declare a variable as mutable using the `mut` keyword.
 
 
 
----
 
-
-
-@20/839
+@25/839
 ---
 EOF
