@@ -35,10 +35,12 @@ src: https://www.youtube.com/watch?v=BpPEoZW5IiY
 # Variables
 
 - variables are assigned using the `let` keyword	
-- print to standard output using `println!` or `print!`
+- print to standard output using `println!` or `print!` (same as println but without the newline)
 - the scope of a variable is the block of code in which it is declared
 - a **function** is a named block of code that is **reusable**
 - **shadowing** allows a variable to be re-declared in the **same scope** with the **same name**
+
+---
 
 ## Writing our first Rust program
 
@@ -55,6 +57,6 @@ fn main() {
 
 
 
-@7/839
+@9/839
 ---
 EOF
