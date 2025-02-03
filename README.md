@@ -25,8 +25,10 @@ src: https://www.youtube.com/watch?v=BpPEoZW5IiY
 
 ## Recommended Resources (already in my whishlist)
 
-- The Rust Programming Language (second edition)
-- Rust for Rustaceans (more advanced concepts)
+- The Rust Programming Language (book covering the basics - 2nd edition)
+- Rust for Rustaceans (book introducing more advanced concepts)
+- https://practice.course.rs/why-exercise.html
+- https://play.rust-lang.org/?version=stable&mode=debug&edition=2021
 
 ---
 
@@ -36,6 +38,16 @@ src: https://www.youtube.com/watch?v=BpPEoZW5IiY
 
 
 
-@4/839
+
+## Writing our first Rust program
+
+- see `firstProgram.rs` file
+
+
+---
+
+
+
+@5/839
 ---
 EOF
