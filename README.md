@@ -40,26 +40,25 @@ src: https://www.youtube.com/watch?v=BpPEoZW5IiY
 - a **function** is a named block of code that is **reusable**
 - **shadowing** allows a variable to be re-declared in the **same scope** with the **same name**
 
-In Rust, variables are immutable by default.  
+In Rust, variables are **immutable** by default.  
 You need to explicitly declare a variable as mutable using the `mut` keyword.  
+
+
 
 ---
 
 ## Writing our first Rust program
 
 - see `firstProgram.rs` file
-- every Rust program starts with a `main` function
-```rust	
-fn main() {
-  println!("Hello, world!");
-}
-```
+- every Rust program includes a `main` function, that is the entry point of the program
+
+
 
 
 ---
 
 
 
-@13/839
+@20/839
 ---
 EOF
