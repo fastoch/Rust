@@ -23,7 +23,7 @@ src: https://www.youtube.com/watch?v=BpPEoZW5IiY
 - Most beloved programming language since 2016 (according to Stack Overflow)
 - Fast adoption in various branches
 
-## Recommended Resources (already in my whishlist)
+## Recommended Resources
 
 - The Rust Programming Language (book covering the basics - 2nd edition)
 - Rust for Rustaceans (book introducing more advanced concepts)
