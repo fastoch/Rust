@@ -1,4 +1,4 @@
-# Learn Rust Programming - Complete Course
+# Learn Rust Programming - Complete Course (2023)
 
 src: https://www.youtube.com/watch?v=BpPEoZW5IiY  
 
@@ -11,11 +11,31 @@ src: https://www.youtube.com/watch?v=BpPEoZW5IiY
 - Ownership & Borrowing
 - Allocating data to memory and accessing data from memory
 - Standard Library
-- Generics, Traits, Lifetimes, closures, and much more
+- Generics, Traits, Lifetimes, Closures, and much more
+
+## Why learning Rust?
+
+- Fastest language after C
+- Rich type system
+- No garbage collector (faster runtime)
+- Useful compiler output
+- Guarantees Memory safety
+- Most beloved programming language since 2016 (according to Stack Overflow)
+- Fast adoption in various branches
+
+## Recommended Resources (already in my whishlist)
+
+- The Rust Programming Language (second edition)
+- Rust for Rustaceans (more advanced concepts)
 
 ---
 
-# Chapter 1 - 
+# Variables
 
+- are assigned using the `let` keyword	
+
+
+
+@4/839
 ---
 EOF
