@@ -1,4 +1,4 @@
-# Learn Rust Programming - Complete Course (2023) - @42/839
+# Learn Rust Programming - Complete Course (2023) - @44/839
 
 src: https://www.youtube.com/watch?v=BpPEoZW5IiY  
 
