@@ -83,6 +83,10 @@ let (a, b) = (1, 2);
 
 # Data Types
 
+## Numbers
+
+### Integer ranges
+
 ![image](https://github.com/user-attachments/assets/a399e426-95da-4d7a-ae0a-3ab5a85de8ab)
 
 
