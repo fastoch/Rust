@@ -1,4 +1,4 @@
-# Learn Rust Programming - Complete Course (2023) - @40/839
+# Learn Rust Programming - Complete Course (2023) - @42/839
 
 src: https://www.youtube.com/watch?v=BpPEoZW5IiY  
 
@@ -93,6 +93,14 @@ let (a, b) = (1, 2);
 
 In a 32-bit architecture, the size of a word is 4 bytes (32 bits), which means that the processor can access 4 bytes at a time.  
 In a 64-bit architecture, the size of a word is 8 bytes (64 bits), which means that the processor can access 8 bytes at a time.  
+
+### Floating Point
+
+types are f32 and f64  
+
+
+
+
 
 ---
 EOF
