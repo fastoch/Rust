@@ -1,4 +1,4 @@
-# Learn Rust Programming - Complete Course (2023)
+# Learn Rust Programming - Complete Course (2023) - @37/839
 
 src: https://www.youtube.com/watch?v=BpPEoZW5IiY  
 
@@ -82,7 +82,5 @@ let (a, b) = (1, 2);
 
 
 
-
-@35/839
 ---
 EOF
