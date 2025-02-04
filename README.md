@@ -70,7 +70,7 @@ let (a, b) = (1, 2);
 
 ## Destructuring Assignments
 
-
+???
 
 ---
 
@@ -79,6 +79,11 @@ let (a, b) = (1, 2);
 - see `firstProgram.rs` file
 - every Rust program includes a `main` function, that is the entry point of the program
 
+---
+
+# Data Types
+
+![image](https://github.com/user-attachments/assets/a399e426-95da-4d7a-ae0a-3ab5a85de8ab)
 
 
 
