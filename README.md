@@ -89,7 +89,10 @@ let (a, b) = (1, 2);
 
 ![image](https://github.com/user-attachments/assets/a399e426-95da-4d7a-ae0a-3ab5a85de8ab)
 
+### What is a word?
 
+In a 32-bit architecture, the size of a word is 4 bytes (32 bits), which means that the processor can access 4 bytes at a time.  
+In a 64-bit architecture, the size of a word is 8 bytes (64 bits), which means that the processor can access 8 bytes at a time.  
 
 ---
 EOF
