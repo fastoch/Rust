@@ -87,6 +87,9 @@ let (a, b) = (1, 2);
 
 ### Integer ranges
 
+- i = signed integer
+- u = unsigned integer
+
 ![image](https://github.com/user-attachments/assets/a399e426-95da-4d7a-ae0a-3ab5a85de8ab)
 
 ### What is a word?
