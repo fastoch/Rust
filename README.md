@@ -99,7 +99,8 @@ In a 64-bit architecture, the size of a word is 8 bytes (64 bits), which means t
 
 ### Floating Point
 
-types are f32 and f64  
+- f32 - floats with a size of 32 bits
+- f64 - floats with a size of 64 bits
 
 
 
