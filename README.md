@@ -109,6 +109,11 @@ If we don't explicitly assign a type to a variable, then the compiler will infer
 - By default, Rust compiler will infer the type i32 (32-bit signed integer) for numbers.
 - 
 
+## Type annotation
+
+- We can annotate a type like that: `let x: i64 = 16;`
+- but we can also annotate a type directly on a value: `let x = 16_i64;`
+
 
 ---
 EOF
