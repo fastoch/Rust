@@ -105,6 +105,7 @@ In a 64-bit architecture, the size of a word is 8 bytes (64 bits), which means t
 >[!important]
 >we cannot assign a variable of a type to a variable of another type
 
+By default, Rust compiler will infer the type i32 (32-bit signed integer) for numbers.
 
 
 ---
