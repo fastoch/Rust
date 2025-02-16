@@ -16,17 +16,24 @@ src: https://www.youtube.com/watch?v=BpPEoZW5IiY
 ## What is Rust?
 
 A systems programming language known for its safety, performance, and productivity.  
-It's basically C without having to perform the memory management manually.
+It's basically **C++ without** the hassle of **manual memory management**.  
 
 ## Why learning Rust?
 
-- Fastest language after C
+- Fastest language after C/C++
 - Rich type system
 - No garbage collector (faster runtime)
 - Useful compiler output
-- Guarantees Memory safety
+- Guarantees **Memory safety**
 - Most beloved programming language since 2016 (according to Stack Overflow)
 - Fast adoption in various branches (e.g. Linux kernel, Chromium, Android, Firefox, etc.)
+
+The majority of security vulnerabilities in large codebases can be traced to **memory safety** bugs.  
+And since Rust code can largely, if not totally, avoid such problems when properly implemented,  
+its widespread adoption is no surprise.  
+
+Back in september 2022, Microsoft Azure CTO Mark Russinovich argued that software projects that might have  
+been started in C/C++ should use Rust instead. 
 
 ## Recommended Resources
 
@@ -116,18 +123,18 @@ If we don't explicitly assign a type to a variable, then the compiler will infer
 - By default, Rust compiler will infer the type i32 (32-bit signed integer) for numbers.
 - 
 
-## Type annotation
+### Type annotation
 
 - We can annotate a type like that: `let x: i64 = 16;`
 - but we can also annotate a type directly on a value: `let x = 16_i64;`
 
-## Type inference
+### Type inference
 
 If we don't explicitly assign a type to a variable, then the compiler will infer one for us.  
 - By default, Rust compiler will infer the type `i32` (32-bit signed integer) for numbers.
 - By default, Rust compiler will infer the type `f64` (64-bit floating point number) for floating point numbers.
 
-## Type conversion
+### Type conversion
 
 We can't assign a variable of a type to a variable of another type.  
 We can convert a variable of one type to another type using the `as` keyword.
@@ -149,6 +156,19 @@ fn type_of<T>(_: &T) -> String {
 }
 ```
 
+### Numeral systems
+
+```rust
+fn main() {
+  let v = 1_024 + 0xff + 0o77 + 0b1111_1111;
+  // 1024 (decimal) + 255 (hexadecimal) + 63 (octal) + 255 (binary)
+    // 0xff = 15x16 + 15 = 255 
+    // 0o77 = 7x8 + 7 = 63 
+    // 0b1111_1111 = 1x2^7 + 1x2^6 + ... + 1x2^0 = 255
+  assert!(v == 1597);
+  println!("Success!");
+}
+```
 
 
 
