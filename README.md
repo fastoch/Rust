@@ -139,8 +139,13 @@ let y: i64 = x as i64;
 ```rust
 fn main() {
   let x: u32 = 16; 
-  assert_eq!("u32".to_string(), typeof(&x)); // &x is a reference to x
+  assert_eq!("u32".to_string(), type_of(&x)); // &x is a reference to x
   println!("Success!");
+}
+
+// Get the type of given variable, return a string representation of the type
+fn type_of<T>(_: &T) -> String {
+    format!("{}", std::any::type_name::<T>())
 }
 ```
 
