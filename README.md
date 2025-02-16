@@ -141,6 +141,7 @@ fn main() {
   let x: u32 = 16; 
   assert_eq!("u32".to_string(), typeof(&x)); // &x is a reference to x
   println!("Success!");
+}
 ```
 
 
