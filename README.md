@@ -16,7 +16,7 @@ src: https://www.youtube.com/watch?v=BpPEoZW5IiY
 ## What is Rust?
 
 A systems programming language known for its safety, performance, and productivity.  
-
+It's basically C without having to perform the memory management manually.
 
 ## Why learning Rust?
 
