@@ -162,6 +162,7 @@ fn type_of<T>(_: &T) -> String {
 fn main() {
   let v = 1_024 + 0xff + 0o77 + 0b1111_1111;
   // 1024 (decimal) + 255 (hexadecimal) + 63 (octal) + 255 (binary)
+    // the underscore in 1_024 is just a delimiter used for readability
     // 0xff = 15x16 + 15 = 255 
     // 0o77 = 7x8 + 7 = 63 
     // 0b1111_1111 = 1x2^7 + 1x2^6 + ... + 1x2^0 = 255
