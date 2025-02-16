@@ -13,6 +13,11 @@ src: https://www.youtube.com/watch?v=BpPEoZW5IiY
 - Standard Library
 - Generics, Traits, Lifetimes, Closures, and much more
 
+## What is Rust?
+
+A systems programming language known for its safety, performance, and productivity.  
+
+
 ## Why learning Rust?
 
 - Fastest language after C
@@ -21,7 +26,7 @@ src: https://www.youtube.com/watch?v=BpPEoZW5IiY
 - Useful compiler output
 - Guarantees Memory safety
 - Most beloved programming language since 2016 (according to Stack Overflow)
-- Fast adoption in various branches
+- Fast adoption in various branches (e.g. Linux kernel, Chromium, Android, Firefox, etc.)
 
 ## Recommended Resources
 
@@ -42,11 +47,17 @@ src: https://www.youtube.com/watch?v=BpPEoZW5IiY
 
 In Rust, variables are **immutable** by default.  
 You need to explicitly declare a variable as mutable using the `mut` keyword.  
+```rust
+fn main() {
+  let x = 5; // immutable
+  let mut y = 5; // mutable
+  y = 6;
+```
 
 You can't reassign a value to a variable that is not mutable.  
 You can't increment a variable that is not mutable.  
 
-We can allow unused variables by using the `_` character to prepend the variable name:
+We can allow **unused** variables by using the `_` character to prepend the variable name:
 ```rust
 fn main() {
   let _x = 5;
@@ -67,10 +78,6 @@ We can use a pattern with `let` to destructure a tuple to separate variables:
 ```rust
 let (a, b) = (1, 2);
 ```
-
-## Destructuring Assignments
-
-???
 
 ---
 
@@ -113,6 +120,30 @@ If we don't explicitly assign a type to a variable, then the compiler will infer
 
 - We can annotate a type like that: `let x: i64 = 16;`
 - but we can also annotate a type directly on a value: `let x = 16_i64;`
+
+## Type inference
+
+If we don't explicitly assign a type to a variable, then the compiler will infer one for us.  
+- By default, Rust compiler will infer the type `i32` (32-bit signed integer) for numbers.
+- By default, Rust compiler will infer the type `f64` (64-bit floating point number) for floating point numbers.
+
+## Type conversion
+
+We can't assign a variable of a type to a variable of another type.  
+We can convert a variable of one type to another type using the `as` keyword.
+```rust
+let x = 16; // i32
+let y: i64 = x as i64;
+```
+
+```rust
+fn main() {
+  let x: u32 = 16; 
+  assert_eq!("u32".to_string(), typeof(&x)); // &x is a reference to x
+  println!("Success!");
+```
+
+
 
 
 ---
