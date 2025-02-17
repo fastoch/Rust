@@ -104,7 +104,11 @@ let (a, b) = (1, 2);
 - i = signed integer
 - u = unsigned integer
 
-![image](https://github.com/user-attachments/assets/a399e426-95da-4d7a-ae0a-3ab5a85de8ab)
+-128 < i8 < 127  
+-32,768 < i16 < 32,767
+
+0 < u8 < 255  
+0 < u16 < 65,535
 
 ### What is a word?
 
@@ -116,12 +120,30 @@ In a 64-bit architecture, the size of a word is 8 bytes (64 bits), which means t
 - f32 - floats with a size of 32 bits
 - f64 - floats with a size of 64 bits
 
+The following code won't compile:
+```rust
+fn main() {
+  assert!(0.1 + 0.2 == 0.3);
+  println("Success!");
+```
+because the default type for floating point numbers is `f64`, which has a precision of 15 to 16 decimal digits.  
+
+To make it work, we need to explicitly convert the numbers to `f32`:
+```rust
+fn main() {
+  assert!(0.1_f32 + 0.2_f32 == 0.3_f32);
+  println("Success!");
+```
+
+Other solution:
+```rust
+fn main() {
+  assert!(0.1 as f32 + 0.2 as f32 == 0.3 as f32);
+  println!("Success!");
+```
+
 >[!important]
 >we cannot assign a variable of a type to a variable of another type
-
-If we don't explicitly assign a type to a variable, then the compiler will infer one for us.  
-- By default, Rust compiler will infer the type i32 (32-bit signed integer) for numbers.
-- 
 
 ### Type annotation
 
@@ -170,6 +192,7 @@ fn main() {
   println!("Success!");
 }
 ```
+
 
 
 
