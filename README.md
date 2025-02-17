@@ -193,6 +193,30 @@ fn main() {
 }
 ```
 
+### Numbers and for loops
+
+```rust
+fn main() {
+  let mut sum = 0;
+  for i in -3..2 { // 2 is excluded
+    sum += i
+  }
+  assert!(sum == -5); // 0 - 3 - 2 - 1 + 1 = -5
+
+  for c in 'a'..='z' { // 'z' is included
+    println!("{}", c as u8); // prints 97 to 122
+  }
+}
+```
+
+### Range & RangeInclusive
+
+```rust
+// import from the standard library the ops modules Range and RangeInclusive 
+use std::ops::{Range, RangeInclusive}; 
+fn main() {
+
+}
 
 
 
